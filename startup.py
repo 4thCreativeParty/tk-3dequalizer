@@ -33,6 +33,7 @@ class TDE4Launcher(SoftwareLauncher):
         ]
 
         # Add context information info to the env.
+        required_env["PYTHONPATH"] = os.environ["PYTHONPATH"]
         required_env["TANK_CONTEXT"] = sgtk.Context.serialize(self.context)
 
         # open a file

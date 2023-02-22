@@ -6,14 +6,14 @@ import sys
 
 
 if __name__ == "__main__":
-    sys.path.append(
-        os.path.join(
-            os.getenv("TANK_CURRENT_PC"),
-            "install",
-            "core",
-            "python",
-        )
-    )
+    # sys.path.append(
+    #     os.path.join(
+    #         os.getenv("TANK_CURRENT_PC"),
+    #         "install",
+    #         "core",
+    #         "python",
+    #     )
+    # )
     import sgtk
 
     if not sgtk.platform.current_engine():
